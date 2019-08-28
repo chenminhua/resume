@@ -1,0 +1,80 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{陈敏华}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 15221358935}{chenmhgo@gmail.com}{软件工程师}{github.com/chenminhua}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{中国科学院大学/上海科技大学},信息工程,\textit{硕士研究生}}{2014.8 - 2017.6}
+\ \textbf{排名(前15\%)}, 全国研究生数学建模大赛三等奖(2014.9)。
+\datedsubsection{\textbf{东南大学吴健雄学院},信息工程,\textit{本科}}{2010.8 - 2014.6}
+\ \textbf{排名(前30\%)}, 全国电子设计大赛二等奖(2013.9)，东南智能奖励金(2013)。
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Java (kotlin), JavaScript (Node.js), C/C++, Python, Go, SQL
+  \item \textbf{常用工具与框架}: Mysql, Redis, Spring, Kubernetes, Tensorflow
+  \item \textbf{其他关键词}: TCP/IP
+\end{itemize}
+
+% \end{itemize}
+
+\section{工作经历}
+\datedsubsection{\textbf{黑湖科技 | Blacklake}, 软件工程师, 后端leader}{2016.11-至今}
+\begin{itemize}
+  \item \textbf{完成黑湖智造整体后端架构从0到1的开发}
+  \item \textbf{参与黑湖智造后端架构微服务化改造}
+  \item \textbf{负责黑湖智造生产执行与物料管理两大模块的架构设计}
+\end{itemize}
+
+\datedsubsection{\textbf{IBM CRL}, 实习软件工程师}{2015.7-2016.1}
+\begin{itemize}
+  \item 独立负责物联网多租户系统prototype的开发
+\end{itemize}
+
+\section{\faHeartO\ 个人项目/作品摘要}
+\datedline{\textit{Blog，个人博客}, https://chenminhua.github.io }{}
+\datedline{\textit{suanfa，一个关于算法和数据结构的网站(2015年)}, https://suanfa.herokuapp.com/0preface/ }{}
+\datedline{\textit{gituser，一个在命令行看github user profile的工具(2016年)}, https://github.com/chenminhua/gituser}{}
+\datedline{\textit{RNGIT，基于RN编写的移动端github客户端(2016年)，}, https://github.com/chenminhua/RNGIT}{}
+\datedline{\textit{Pin，一个跨网络云端文件剪贴板(2019年)}, https://github.com/chenminhua/pin}{}
+\datedline{\textit{知乎专栏(2019年)}, https://zhuanlan.zhihu.com/c\_113537698}{}
+
+
+
+\section{自我评价}
+热爱科学，脑洞很大，喜欢探寻事物本质，对世界充满热情。
+
+目前比较擅长服务端架构设计与开发，有一定的微服务架构经验。对web应用的并发能力提升有自己的方法论。
+
+对工业（尤其是制造业）软件的业务类型以及潜在需求比较了解，有一定的业务架构能力。
+
+架构方面，当前正在提升的方向是弹力系统架构设计。
+
+同时在自学深度学习。
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
