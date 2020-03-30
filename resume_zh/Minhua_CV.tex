@@ -1,0 +1,121 @@
+%! TEX program = lualatex
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{minhuacv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+
+
+
+% Set applicant's personal data for header
+\name{Minhua Chen}
+\address{PuDong \linebreak Shafenghai China}
+\contacts{(86) 15221358935 \linebreak chenmhgo@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer}{BlackLake}{2016/11 - Now}
+			\begin{itemize}
+				\item Developed manufacturing execution system from stracth, designed and implemented core backend services.
+				\item Developed data syncing service for syncing MySQL data into ElasticSearch automatically, which is the fundamental compoment of all searching service and tracing service.
+				\item Improved data history tracing system by using adaptive data schema, reduced 80\% disk space and 30\% api latency.
+				\item Developed file service with switchable storage services (AWS S3, QINIU and MinIO).
+				\item Developed job scheduling service for making business intelligence data report.
+				\item Developed customizable concurrency limiter library for protecting key OPEN HTTP API.
+				\item Developed object tracking prototype with YOLOv3 and NVIDIA JETSON.
+				\item Leaded backend team to migrate from NodeJS/ExpressJS to Kotlin/Spring.
+				\item Leveragedskills:Java,Kotlin,NodeJS,ExpressJS,MySQL,ElasticSearch,Redis,Kafka,SpringBoot,Spring Cloud, Kubernetes, Tensorflow.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer, Intern}{IBM CRL}{2015/7 - 2016/1}	
+			\begin{itemize}
+				\item Developed health care service prototype with multi-tenancy architecture from stracth (full stack).
+				\item Utilized Echart to visualize biological data. Raspberry pi as sensor gateway; RabbitMQ as pub/sub channel.
+				\item Developed event-driven engine by Node-RED for emergency alerting feature.
+				\item Leveraged skills: Java, NodeJS, React, EChart, MySQL, RabbitMQ.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Teaching Assistant}{Shanghaitech University}{2015/2 - 2015/7}		
+			\begin{itemize}
+				\item Courses: Introduction to information Technology.
+				\item Build a website for teaching students algorithms and data structure. https://suanfa.herokuapp.com/
+			\end{itemize}
+		\end{cvsubsection}
+		
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Shanghai, China}{Shanghaitech University}{2014/8 -- 2017/5}
+			\begin{itemize}
+				\item M.S.E. in Information Science and Technology, May 2017. GPA: 3.5
+				\item Course: Algorithms; Machine Learning; Computer Vision; Compressed Sensing; Matrix Analysis; Digital Signal Processing; Robotics; Entrepreneurship.
+				\item Research Topic: Convolutional Recurrent Neural Network-based Channel Equalization.
+				\item Reward: Thrid Prize in National Post-Graduate Mathematical Contest in Modeling
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Nanjing, China}{Southeast University}{2010/8 -- 2014/6}
+			\begin{itemize}
+				\item B.S.E. in Information Science and Technology, June 2014. GPA: 3.6.
+				\item Course: Digital Circuit; Analog Circuit; Communication Theory; Signals and Systems; Digital Signal Processing; Computer Organization And Architecture.
+				\item Reward: Thrid Prize in National Undergraduate Electronics Design Contest.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Side projects}{}{}
+			\begin{itemize}
+				\item \textbf{Website for Algorithms} (2015) https://suanfa.herokuapp.com/
+				\item \textbf{Gituser - command line tool for github user profile} (2016) https://github.com/chenminhua/gituser 
+				\item \textbf{RNGIT - A github mobile app} (2016) https://github.com/chenminhua/RNGIT
+				\item \textbf{Pin - A clipboard on network} (2019) https://github.com/chenminhua/pin
+				\item \textbf{Github} (2014 - Now) https://github.com/chenminhua
+				\item \textbf{Personal Blog} (2015 - Now) https://chenminhua.github.io
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Programming Language} Java; C; Python; JavaScript; Golang;
+				\item \textbf{Web Framewark} Spring; Flask; ExpressJS;
+				\item \textbf{Database} MySQL; Redis; 
+				\item \textbf{Miscellaneous} Kafka; Elastic search; Git; Kubernetes; Docker;
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
